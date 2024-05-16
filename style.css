@@ -1,0 +1,99 @@
+import url ('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+import url ('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font imported */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto Mono", monospace;
+}
+.my_section{
+    background-image:url(Images/michal-parzuchowski-ItaV89TNkks-unsplash.jpg) ;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover ;
+}
+.text_container{
+    color: white;
+    max-width: 900px;
+    margin: auto; /* To center a block level */
+    padding-top: 64px;
+    padding-left: 16px;
+}
+.span{
+    font-size: 75px;
+}
+.black_box{
+    background-color: black;
+    padding: 20px;
+}
+.black_box h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    text-align:center;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.card{
+   height: 400px;
+   width: 300px;
+   border-radius: 10px;
+   text-align: center;
+   padding: 20px;
+   background-size: cover;
+   transition: 0.2s ease-in-out;
+   font-family: "Roboto", sans-serif;
+   box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+}
+.work{
+    max-width: 1700px;
+    display: grid; 
+    margin: auto;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.card h3{
+    margin: 10px;
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+}
+.bottom{
+    display: flex;
+}
+.Address{
+    background-color: #3c3c40;
+}
+.about{
+    background-color: #604f4e;
+}
+.Address,.about{
+   margin-top: 10px;
+   flex: 1;
+   min-height: 200px;
+   padding-left: 10px;
+}
+.Address p,.about p{
+   margin-bottom: 5px;
+   line-height: 15px ;
+}
+@media{max-width: 780px ;}{
+    .my_section{
+        min-height: 50vh;
+}
+}
+.blackbox2{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
